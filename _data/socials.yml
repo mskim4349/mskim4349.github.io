@@ -1,0 +1,11 @@
+# Social media links shown on the homepage and in the page footer.
+# See https://github.com/george-gca/jekyll-socials for the supported networks.
+
+email: ms.kim@unist.ac.kr
+# cv_pdf: /assets/pdf/cv.pdf       # uncomment after you upload your CV PDF
+# orcid_id: 0000-0000-0000-0000     # your ORCID
+# scholar_userid:                   # your Google Scholar ID (the part after 'user=' in the URL)
+github_username: mskim4349
+# linkedin_username: your-linkedin-username
+# researchgate_profile: Your-Name
+rss_icon: true

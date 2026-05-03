@@ -1,0 +1,99 @@
+cv:
+  name: Minsu Kim
+  label: Researcher · Computational Mechanics × Machine Learning
+  email: ms.kim@unist.ac.kr
+  location: Ulsan, Republic of Korea
+  image: ""
+  summary: >
+    Researcher at UNIST working on neural-network constitutive models, physics-informed
+    neural networks, and graph neural network surrogates for solid-mechanics simulation.
+
+  social_networks:
+    - network: GitHub
+      username: your-github-username
+    - network: LinkedIn
+      username: your-linkedin-username
+
+  address:
+    street: Department of Mechanical Engineering, 50 UNIST-gil
+    city: Ulju-gun, Ulsan
+    region: ""
+    postalCode: "44919"
+    countryCode: KR
+
+  sections:
+    Education:
+      - institution: UNIST (Ulsan National Institute of Science and Technology)
+        location: Ulsan, South Korea
+        url: https://www.unist.ac.kr
+        area: Mechanical Engineering — Computational Solid Mechanics
+        studyType: Ph.D.
+        start_date: YYYY
+        end_date: YYYY
+        highlights:
+          - "Dissertation: TBD"
+          - Advisor — TBD
+
+      - institution: UNIST
+        location: Ulsan, South Korea
+        area: Mechanical Engineering
+        studyType: B.S.
+        start_date: YYYY
+        end_date: YYYY
+
+    Experience:
+      - company: UNIST — Department of Mechanical Engineering
+        position: Researcher
+        location: Ulsan, South Korea
+        start_date: YYYY
+        end_date: present
+        summary: >
+          Develops machine-learning-augmented constitutive models and graph-neural-network
+          surrogates for multiscale solid mechanics; collaborates on national R&D projects
+          in advanced manufacturing and composites.
+        highlights:
+          - Lead developer of a multiscale GNN surrogate for elasto-plastic homogenization
+          - Co-PI on the AI-modeling work package of the 2026 소재HUB consortium
+          - Mentoring graduate students on PINN and surrogate-modeling projects
+
+    Awards and Grants:
+      - title: 2026 소재HUB 지정공모형-01 (Consortium Member, UNIST work package)
+        authors:
+          - Minsu Kim (UNIST PI of composites/process AI modeling)
+        date: 2026
+        awarder: Ministry of Trade, Industry and Energy (placeholder)
+        summary: >
+          Consortium proposal on AI-driven modeling of fiber-reinforced composites and
+          processes for next-generation rehabilitation robotics.
+
+      - title: Best Paper Award (placeholder)
+        date: YYYY
+        awarder: Conference / Society name
+        summary: For work on TBD.
+
+    Skills:
+      - name: Computational Mechanics
+        level: Advanced
+        icon: fa-solid fa-cube
+        keywords: "Finite-element analysis, plasticity, damage mechanics, multiscale modeling, FE², homogenization, residual stress"
+
+      - name: Machine Learning for Physics
+        level: Advanced
+        icon: fa-solid fa-brain
+        keywords: "PINN, graph neural networks, equivariant networks, surrogate modeling, Bayesian optimization, uncertainty quantification"
+
+      - name: Software & Tools
+        level: Advanced
+        icon: fa-solid fa-code
+        keywords: "Python, PyTorch, JAX, FEniCSx, Abaqus, ParaView, Git, Linux, HPC (SLURM)"
+
+    Languages:
+      - name: Korean
+        summary: Native
+      - name: English
+        summary: Professional working proficiency
+
+    Interests:
+      - name: Research
+        icon: fa-solid fa-magnifying-glass-chart
+        keywords: "Constitutive modeling, neural-network surrogates, inverse problems, indentation testing, multiscale homogenization, additive manufacturing"
