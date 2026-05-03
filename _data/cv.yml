@@ -1,5 +1,5 @@
 cv:
-  name: Minsu Kim
+  name: Myungsung Kim
   label: Researcher · Computational Mechanics × Machine Learning
   email: ms.kim@unist.ac.kr
   location: Ulsan, Republic of Korea
@@ -59,7 +59,7 @@ cv:
     Awards and Grants:
       - title: 2026 소재HUB 지정공모형-01 (Consortium Member, UNIST work package)
         authors:
-          - Minsu Kim (UNIST PI of composites/process AI modeling)
+          - Myungsung Kim (UNIST PI of composites/process AI modeling)
         date: 2026
         awarder: Ministry of Trade, Industry and Energy (placeholder)
         summary: >
