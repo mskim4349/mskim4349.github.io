@@ -371,31 +371,26 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
+      },{id: "news-paper-published-in-engineering-science-and-technology-an-international-journal-a-neural-network-integrated-elastoplastic-constitutive-model-using-haigh-westergaard-coordinates-and-data-augmentation-doi",
+          title: 'Paper published in Engineering Science and Technology, an International Journal — A Neural...',
           description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-paper-on-pinn-based-inverse-identification-from-instrumented-indentation-accepted-to-international-journal-of-plasticity",
-          title: 'Paper on PINN-based inverse identification from instrumented indentation accepted to International Journal of...',
+          section: "News",},{id: "news-joined-the-department-of-mechanical-engineering-unist-as-a-postdoctoral-researcher-with-the-innocore-ai-based-intelligent-design-manufacturing-integration-research-center-pi-prof-hayoung-chung",
+          title: 'Joined the Department of Mechanical Engineering, UNIST as a postdoctoral researcher with the...',
           description: "",
-          section: "News",},{id: "news-talk-at-wccm-panacm-2025-in-vancouver-frame-indifferent-neural-surrogates-for-history-dependent-multiscale-problems-slides-available-on-request",
-          title: 'Talk at WCCM-PANACM 2025 in Vancouver: “Frame-indifferent neural surrogates for history-dependent multiscale problems”...',
-          description: "",
-          section: "News",},{id: "news-new-preprint-on-multiscale-gnn-surrogates-for-elasto-plastic-homogenization-is-online-paper-code",
-          title: 'New preprint on multiscale GNN surrogates for elasto-plastic homogenization is online — paper...',
+          section: "News",},{id: "news-paper-published-in-journal-of-applied-mechanics-asme-determination-of-material-parameters-from-single-spherical-indentation-data-using-artificial-neural-networks-doi",
+          title: 'Paper published in Journal of Applied Mechanics (ASME) — Determination of Material Parameters...',
           description: "",
           section: "News",},{id: "news-joined-the-2026-소재hub-consortium-unist-partners-on-ai-driven-modeling-of-composite-materials-and-processes-for-next-generation-rehabilitation-robotics-proposal-due-2026-05-11",
           title: 'Joined the 2026 소재HUB consortium (UNIST + partners) on AI-driven modeling of composite...',
           description: "",
-          section: "News",},{id: "projects-multiscale-gnn-surrogate",
-          title: 'Multiscale GNN surrogate',
-          description: "Graph neural network surrogate for elasto-plastic FE² homogenization.",
+          section: "News",},{id: "projects-ann-parameter-id-from-indentation",
+          title: 'ANN parameter ID from indentation',
+          description: "Recovering elasto-plastic material parameters from a single spherical-indentation curve with artificial neural networks.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-pinn-inverse-identification",
-          title: 'PINN inverse identification',
-          description: "Physics-informed neural networks for material parameter identification from instrumented indentation.",
+            },},{id: "projects-nn-integrated-elasto-plastic-constitutive-model",
+          title: 'NN-integrated elasto-plastic constitutive model',
+          description: "A neural-network constitutive law parameterized in Haigh–Westergaard coordinates with physics-aware data augmentation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-composite-materials-ai-modeling",
@@ -419,6 +414,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("mailto:%6D%73.%6B%69%6D@%75%6E%69%73%74.%61%63.%6B%72", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=n5buVuEAAAAJ", "_blank");
         },
       },{
         id: 'social-github',
