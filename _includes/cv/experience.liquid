@@ -1,91 +1,44 @@
 {% comment %}
-  Unified work/experience entry renderer for both RenderCV and JSONResume formats
-  Handles both:
-  - RenderCV: company, position, start_date, end_date, location, url, summary, highlights
-  - JSONResume: name, position, startDate, endDate, location, url, summary, highlights
+  Compact news-style experience renderer.
+  Renders each entry as a single table row: date range on the left,
+  inline summary on the right. Mirrors _includes/news.liquid layout.
 {% endcomment %}
 
-<ul class="card-text font-weight-light list-group list-group-flush">
-  {% for entry in entries %}
-    <li class="list-group-item">
-      <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
-          {% capture start_date %}
-            {% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}
-          {% endcapture %}
-          {% capture end_date %}
-            {% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}
-          {% endcapture %}
+<div class="news">
+  <table class="table table-sm table-borderless">
+    {% for entry in entries %}
+      {% capture sd %}{% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}{% endcapture %}
+      {% capture ed %}{% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}{% endcapture %}
+      {% assign sd_label = sd | strip %}
+      {% assign ed_label = ed | strip | default: 'present' %}
+      {% if ed_label == 'present' or ed_label == 'Present' %}
+        {% assign ed_label = 'Present' %}
+      {% endif %}
 
-          {% if start_date != '' %}
-            {% comment %} Extract year only from dates like "1933-01-01" or just use "1933" as is {% endcomment %}
-            {% assign startDate = start_date | split: '-' | first %}
-            {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
-            {% assign date = startDate | append: ' - ' | append: endDate %}
-          {% else %}
-            {% assign date = '' %}
+      {% capture position_title %}{% if entry.position %}{{ entry.position }}{% endif %}{% endcapture %}
+      {% capture company_name %}{% if entry.name %}{{ entry.name }}{% elsif entry.company %}{{ entry.company }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}{% endcapture %}
+
+      <tr>
+        <th scope="row" style="width: 20%; vertical-align: top; font-weight: 600;">
+          {% if sd_label != '' %}{{ sd_label }}{% if ed_label != '' %} – {{ ed_label }}{% endif %}{% endif %}
+        </th>
+        <td>
+          <strong>{{ position_title | strip }}</strong>{% if entry.url %}, <a href="{{ entry.url }}">{{ company_name | strip }}</a>{% elsif company_name != '' %}, {{ company_name | strip }}{% endif %}.
+          {% if entry.location %}
+            <span class="text-muted" style="font-size: 0.9em;">({{ entry.location }})</span>
           {% endif %}
-
-          <table class="table-cv">
-            <tbody>
-              <tr>
-                <td>
-                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
-                </td>
-              </tr>
-              {% capture location %}
-                {% if entry.location %}{{ entry.location }}{% endif %}
-              {% endcapture %}
-              {% if location != '' %}
-                <tr>
-                  <td>
-                    <p class="location">
-                      <i class="fa-solid fa-location-dot iconlocation"></i>
-                      {{ location }}
-                    </p>
-                  </td>
-                </tr>
-              {% endif %}
-            </tbody>
-          </table>
-        </div>
-        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-          {% capture position_title %}
-            {% if entry.position %}{{ entry.position }}{% endif %}
-          {% endcapture %}
-
-          {% if entry.url %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">
-              <a href="{{ entry.url }}">{{ position_title }}</a>
-            </h6>
-          {% elsif position_title != '' %}
-            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ position_title }}</h6>
-          {% endif %}
-
-          {% capture company_name %}
-            {% if entry.name %}{{ entry.name }}{% elsif entry.company %}{{ entry.company }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}
-          {% endcapture %}
-          {% if company_name != '' %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ company_name }}</h6>
-          {% endif %}
-
           {% if entry.summary %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
-              {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
-            </h6>
+            <div style="margin-top: 0.25rem;">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
           {% endif %}
-
           {% if entry.highlights %}
-            <ul class="items">
+            <ul style="margin: 0.25rem 0 0 0; padding-left: 1.25rem; font-size: 0.95em;">
               {% for item in entry.highlights %}
-                <li>
-                  <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
-                </li>
+                <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
               {% endfor %}
             </ul>
           {% endif %}
-        </div>
-      </div>
-    </li>
-  {% endfor %}
-</ul>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>

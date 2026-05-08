@@ -1,15 +1,14 @@
 cv:
-  name: Myung-Sung Kim
+  name: Myung-Sung Kim (김명성)
   label: Postdoctoral Researcher · Computational Solid Mechanics × Machine Learning
   email: ms.kim@unist.ac.kr
   location: Ulsan, Republic of Korea
   image: ""
   summary: >
-    Postdoctoral researcher at UNIST working at the boundary between
-    computational solid mechanics and machine learning. Research focuses on
-    neural-network constitutive modeling, indentation-based parameter
-    identification, damage and fracture in cryogenic environments, and
-    graph-neural-network surrogates for multi-physics simulation.
+    UNIST 기계공학과 박사후연구원. 계산고체역학과 머신러닝의 경계에서 신경망 기반
+    구성방정식, 압입시험 기반 재료 물성 역추정, 극저온 환경 금속소재의 손상 및
+    파괴 모델링, 그리고 다중물리 시뮬레이션을 위한 그래프 신경망 대리모델을
+    연구합니다.
 
   address:
     street: Department of Mechanical Engineering, 50 UNIST-gil, Eonyang-eup
@@ -20,95 +19,95 @@ cv:
 
   sections:
     Education:
-      - institution: Pusan National University
+      - institution: 부산대학교 (Pusan National University)
         location: Busan, South Korea
         url: https://www.pusan.ac.kr
-        area: Naval Architecture and Ocean Engineering
-        studyType: Ph.D.
+        area: 조선해양공학과
+        studyType: 공학박사 (Ph.D.)
         start_date: 2016-03
         end_date: 2021-02
         highlights:
-          - "Dissertation: *A Study on Impact Failure of Materials and Structure Applied to LNG Cargo Containment System*"
-          - Advisor — Prof. Jae-Myung Lee
+          - "학위논문: *A Study on Impact Failure of Materials and Structure Applied to LNG Cargo Containment System*"
+          - 지도교수 — 이제명 교수
 
-      - institution: Pusan National University
+      - institution: 부산대학교 (Pusan National University)
         location: Busan, South Korea
         url: https://www.pusan.ac.kr
-        area: Naval Architecture and Ocean Engineering
-        studyType: M.S.
+        area: 조선해양공학과
+        studyType: 공학석사 (M.S.)
         start_date: 2014-09
         end_date: 2016-02
         highlights:
-          - "Thesis: *Constitutive Model for Porous Composite Material and Application to FEA*"
-          - Advisor — Prof. Jae-Myung Lee
+          - "학위논문: *Constitutive Model for Porous Composite Material and Application to FEA*"
+          - 지도교수 — 이제명 교수
 
-      - institution: Pusan National University
+      - institution: 부산대학교 (Pusan National University)
         location: Busan, South Korea
         url: https://www.pusan.ac.kr
-        area: Naval Architecture and Ocean Engineering
-        studyType: B.S.
+        area: 조선해양공학과
+        studyType: 공학사 (B.S.)
         start_date: 2012-03
         end_date: 2014-08
 
     Experience:
-      - company: UNIST (Ulsan National Institute of Science and Technology)
-        position: Postdoctoral Researcher
+      - company: 울산과학기술원 (UNIST)
+        position: 박사후연구원 (Postdoctoral Researcher)
         location: Ulsan, South Korea
         url: https://www.unist.ac.kr
-        start_date: 2025-09
+        start_date: 2025.09
         end_date: present
         summary: >
-          Department of Mechanical Engineering · PI: Prof. Hayoung Chung.
-          InnoCORE — AI-Based Intelligent Design–Manufacturing Integration
-          Research Center.
-        highlights:
-          - Develops graph-neural-network surrogates for accelerated transient multi-physics (welding, thermal-process) simulation
-          - Builds neural-network constitutive models with embedded physical invariants for plasticity and damage
-          - Indentation-based inverse identification of mechanical properties and residual stress
+          기계공학과 · PI: 정하영 교수. *InnoCORE — AI기반 지능형 설계-제조 통합
+          연구단*에서 다중물리 시뮬레이션을 위한 GNN 신경 시뮬레이터와 물리 제약을
+          내재한 신경망 구성방정식 모델을 개발.
 
-      - company: Korea Institute of Machinery and Materials (KIMM)
-        position: Postdoctoral Researcher
+      - company: 한국기계연구원 (KIMM)
+        position: 박사후연구원 (Postdoctoral Researcher)
         location: Daejeon, South Korea
         url: https://www.kimm.re.kr
-        start_date: 2021-03
-        end_date: 2025-08
+        start_date: 2021.03
+        end_date: 2025.08
         summary: >
-          Reliability Research Center, Virtual Engineering Platform Division ·
-          PI: Dr. Yongjin Kim. Development of safety standards for marine
-          hydrogen storage vessels and fuel supply systems.
-        highlights:
-          - Cryogenic (20 K) tensile and fracture-toughness characterization of austenitic stainless steels for liquid-hydrogen service
-          - Constitutive modeling and ductile-fracture simulation of stainless steel under multi-axial stress states
-          - Material-compatibility and safety review for IGF/IGC code-class hydrogen containment systems
+          신뢰성연구센터 · PI: 김용진 센터장. 선박용 수소 저장용기 및 연료공급
+          시스템의 안전기준 개발 — 액체수소 서비스용 오스테나이트계 스테인리스강의
+          극저온(20 K) 인장·파괴인성 평가, 다축응력 상태 하의 연성 파괴 모델링,
+          IGF/IGC 코드 기반 수소 격납 시스템 소재 적합성 검토 수행.
 
     Honors and Awards:
-      - title: Best Paper Presentation Award
+      - title: 우수논문발표상 (Best Paper Presentation Award)
         date: 2023-05
-        awarder: The Society of Naval Architects of Korea (SNAK), Spring Conference
+        awarder: 대한조선학회 (SNAK) 춘계학술대회
         summary: >
-          For research on the safety evaluation of liquid-hydrogen containment
-          systems based on metallic-material characterization.
+          *액체 수소 운송 및 활용을 위한 선박용 소재 선정 및 안전성 평가 절차 연구*
+          에 대한 발표 우수상.
 
     Patents:
-      - bullet: "**14 Korean patents registered** (as inventor or co-inventor). Selected recent grants:"
-      - bullet: "*Impact-avoidance device based on machine learning* — KR 10-2938669, registered 2026-03-09."
-      - bullet: "*Impact-absorption device* — KR 10-2910239, registered 2026-01-06."
-      - bullet: "*Fluid-based fire-suppression spray system using liquid mixture* — KR 10-2909683, registered 2026-01-05."
-      - bullet: "*Inspection method and apparatus for liquid-hydrogen surface evaluation* — KR 10-2880364, registered 2025-10-29."
-      - bullet: "*Hydrogen-content distribution measurement method using ion beam and dynamic material modeling* — KR 10-2829482, registered 2025-06-30."
-      - bullet: "*Liquid-hydrogen storage strength testing apparatus* — KR 10-2812826, registered 2025-05-21."
-      - bullet: "*Pulsed-pressure-wave dynamic material testing apparatus* — KR 10-2611421, registered 2023-12-04."
-      - bullet: "*Dynamic-tensile cage-bridge testing apparatus* — KR 10-2547545, registered 2023-06-21."
-      - bullet: "*Repeated-impact testing apparatus and impact tester* — KR 10-2520565, registered 2023-04-06."
-      - bullet: "*Microscale tensile machine for liquid-hydrogen storage tank evaluation* — KR 10-2481612, registered 2022-12-22."
-      - bullet: "*Compact liquefied-fluid dynamic-test system* — KR 10-2464328, registered 2022-11-02."
-      - bullet: "*Pressure-wave analysis fire-test apparatus for thrusters* — KR 10-2056863, registered 2019-12-12."
-      - bullet: "*Cutting-test apparatus for thin metallic laminates* — KR 10-1866408, registered 2018-06-04."
-      - bullet: "*Dynamic-deformation pressure simulation apparatus for corrugated thin plates* — KR 10-1866399, registered 2018-06-11."
+      - bullet: "**한국 등록특허 14건** (발명자 / 공동발명자). 최근 등록 순으로 정리."
+      - bullet: "*계류삭의 장력을 이용한 에너지 회수장치* — KR 10-2938669 (2026.03.09). 김용진, **김명성**, 안재현, 이태현, 이종직, 김영기, 조유희."
+      - bullet: "*계류삭 절단장치* — KR 10-2910239 (2026.01.06). 김용진, **김명성**, 이태현, 이종직, 김영기, 조유희, 박종원."
+      - bullet: "*비행체를 이용한 선박 계류용 계류삭 제어시스템* — KR 10-2909683 (2026.01.05). 김용진, **김명성**, 유병문, 이태현, 이종직, 김영기, 조유희."
+      - bullet: "*선박의 표면을 검사하는 측정유닛 및 이를 포함하는 검사장치* — KR 10-2880364 (2025.10.29). 김용진, 이태현, 박종원, 이종직, **김명성**, 김영기."
+      - bullet: "*선박 형상 대응형 전자석 패드 유닛 및 이를 이용한 선박 계류 방법* — KR 10-2829482 (2025.06.30). 김용진, 손연홍, **김명성**, 이태현, 박종원, 이종직."
+      - bullet: "*대형 선박 곡면 대응 지그* — KR 10-2812826 (2025.05.21). 김용진, 노승국, 이성철, **김명성**, 손연홍."
+      - bullet: "*소정의 자유도를 가지는 선박 계류용 흡착 장치* — KR 10-2611421 (2023.12.04). 김용진, **김명성**, 노승국, 이성철, 이태현, 손연홍."
+      - bullet: "*선박 계류용 하이브리드 흡착 장치* — KR 10-2547545 (2023.06.21). 김용진, 손연홍, 이태현, 노승국, 이성철, **김명성**."
+      - bullet: "*반복 충격 시험장치 및 이를 이용한 충격 시험방법* — KR 10-2520565 (2023.04.06). **김명성**, 김용진, 이태현, 노승국, 이성철, 신우주."
+      - bullet: "*자이로스코프 원리를 이용한 초저온 물질 저장탱크* — KR 10-2481612 (2022.12.22). **김명성**, 김용진, 이태현, 노승국, 이성철, 손연홍."
+      - bullet: "*다중 흡착 패드 및 이의 제어시스템* — KR 10-2464328 (2022.11.02). 김용진, 손연홍, 이태현, **김명성**, 노승국, 이성철, 이승재."
+      - bullet: "*극저온 구조물의 슬로싱 충격 시험 장치* — KR 10-2056863 (2019.12.12). 이제명, **김명성**, 오종호, 최종민, 김정현, 김슬기."
+      - bullet: "*금속 소재 시험체의 전단시험장치* — KR 10-1866408 (2018.06.04). 이제명, **김명성**, 김슬기, 김정현."
+      - bullet: "*주름부를 가진 극저온 구조물의 측면 충격 시험 장치* — KR 10-1866399 (2018.06.11). 이제명, **김명성**, 김슬기, 김정현."
 
     Software:
-      - bullet: "*Safety-evaluation program for cryogenic offshore plants* — Korea Copyright Commission C-2021-002102 (2021-01-13)."
-      - bullet: "*Reliability-evaluation program for cryogenic offshore plants* — Korea Copyright Commission C-2021-002103 (2021-01-13)."
+      - bullet: "*극한환경 해양플랜트 구조평가용 프로그램* — 한국저작권위원회 C-2021-002102 (2021.01.13). 이제명, **김명성**, 김진연, 임진석, 편강일."
+      - bullet: "*극한환경 해양플랜트 피로균열평가용 프로그램* — 한국저작권위원회 C-2021-002103 (2021.01.13). 이제명, **김명성**, 김진연, 임진석, 편강일."
+
+    Technical Reports:
+      - bullet: "**[한국선급(KRS) 발간 기술보고서 4건]** — 한국선급·한국기계연구원·부산대학교 공동 연구."
+      - bullet: "*선박용 대체연료 격납설비의 금속소재 선정 가이드* (2021-ETC-03), 2021.10.05. [원문](https://www.krs.co.kr/kor/Exclusive/Tech_ETC_View.aspx?MRID=283&NO=3456)"
+      - bullet: "*선박용 액체수소 저장시스템 적합 소재 연구* (2023-ETC-01(K)), 2023.08.09. [원문](https://www.krs.co.kr/kor/BBS/BF_View.aspx?MRID=296&BF_ROWID=PSXjM1z9iD6GUyA9i7oOvw==)"
+      - bullet: "*극저온 단열소재 열적 물성 선정 가이드 연구보고서*, 2024.05.03. [원문](https://www.krs.co.kr/kor/Webzine/View.aspx?WMDR=369&WCDR=6497)"
+      - bullet: "*수소연료 추진선박의 안전성 검토*, 2026 발간 예정. [원문](https://homedev.krs.co.kr/kor/tech_infor/read.aspx?s_code=0403070000&tec_code=ALL&no=3677&gubun=INTRA)"
 
     Skills:
       - name: Computational Solid Mechanics
