@@ -1,65 +1,35 @@
 ---
 layout: page
-title: projects
 permalink: /projects/
-description: Selected research projects and open-source tools.
+title: projects
+description: Funded research projects and consortium roles.
 nav: true
 nav_order: 3
-display_categories:
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+<table class="table table-sm table-borderless">
+  <tr>
+    <th scope="row" style="width: 22%; vertical-align: top; font-weight: 600;">2026.05 – 2026.06</th>
+    <td>
+      <strong>금속소재 내 수소 확산 및 잔류 거동 수치해석 모델링</strong> — 과제책임자 (PI). 부산대학교 산학협력단 발주 학술용역, 수행기관 UNIST.
+    </td>
+  </tr>
+  <tr>
+    <th scope="row" style="width: 22%; vertical-align: top; font-weight: 600;">2025.09 – Present</th>
+    <td>
+      <strong>InnoCORE — AI기반 지능형 설계-제조 통합 연구단</strong> — 박사후연구원, UNIST 기계공학과.
+    </td>
+  </tr>
+  <tr>
+    <th scope="row" style="width: 22%; vertical-align: top; font-weight: 600;">2026 (제안)</th>
+    <td>
+      <strong>2026 소재HUB 지정공모형-01 컨소시엄 (재활보조로봇 복합소재)</strong> — UNIST 분담연구원, 복합소재/공정 AI 모델링.
+    </td>
+  </tr>
+  <tr>
+    <th scope="row" style="width: 22%; vertical-align: top; font-weight: 600;">2021.03 – 2025.08</th>
+    <td>
+      <strong>선박용 수소 저장용기 및 연료공급시스템 안전기준 개발</strong> — 박사후연구원, 한국기계연구원 신뢰성연구센터.
+    </td>
+  </tr>
+</table>
