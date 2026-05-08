@@ -4,11 +4,6 @@ cv:
   email: ms.kim@unist.ac.kr
   location: Ulsan, Republic of Korea
   image: ""
-  summary: >
-    UNIST 기계공학과 박사후연구원. 계산고체역학과 머신러닝의 경계에서 신경망 기반
-    구성방정식, 압입시험 기반 재료 물성 역추정, 극저온 환경 금속소재의 손상 및
-    파괴 모델링, 그리고 다중물리 시뮬레이션을 위한 그래프 신경망 대리모델을
-    연구합니다.
 
   address:
     street: Department of Mechanical Engineering, 50 UNIST-gil, Eonyang-eup
@@ -19,59 +14,63 @@ cv:
 
   sections:
     Education:
-      - institution: 부산대학교 (Pusan National University)
+      - institution: Pusan National University
         location: Busan, South Korea
         url: https://www.pusan.ac.kr
-        area: 조선해양공학과
-        studyType: 공학박사 (Ph.D.)
+        area: Department of Naval Architecture and Ocean Engineering
+        studyType: Ph.D.
         start_date: 2016-03
         end_date: 2021-02
         highlights:
-          - "학위논문: *A Study on Impact Failure of Materials and Structure Applied to LNG Cargo Containment System*"
-          - 지도교수 — 이제명 교수
+          - "Dissertation: *A Study on Impact Failure of Materials and Structure Applied to LNG Cargo Containment System*"
+          - Advisor — Prof. Jae-Myung Lee
 
-      - institution: 부산대학교 (Pusan National University)
+      - institution: Pusan National University
         location: Busan, South Korea
         url: https://www.pusan.ac.kr
-        area: 조선해양공학과
-        studyType: 공학석사 (M.S.)
+        area: Department of Naval Architecture and Ocean Engineering
+        studyType: M.S.
         start_date: 2014-09
         end_date: 2016-02
         highlights:
-          - "학위논문: *Constitutive Model for Porous Composite Material and Application to FEA*"
-          - 지도교수 — 이제명 교수
+          - "Thesis: *Constitutive Model for Porous Composite Material and Application to FEA*"
+          - Advisor — Prof. Jae-Myung Lee
 
-      - institution: 부산대학교 (Pusan National University)
+      - institution: Pusan National University
         location: Busan, South Korea
         url: https://www.pusan.ac.kr
-        area: 조선해양공학과
-        studyType: 공학사 (B.S.)
+        area: Department of Naval Architecture and Ocean Engineering
+        studyType: B.S.
         start_date: 2012-03
         end_date: 2014-08
 
     Experience:
-      - company: 울산과학기술원 (UNIST)
-        position: 박사후연구원 (Postdoctoral Researcher)
+      - company: UNIST (Ulsan National Institute of Science and Technology)
+        position: Postdoctoral Researcher
         location: Ulsan, South Korea
         url: https://www.unist.ac.kr
         start_date: 2025.09
         end_date: present
         summary: >
-          기계공학과 · PI: 정하영 교수. *InnoCORE — AI기반 지능형 설계-제조 통합
-          연구단*에서 다중물리 시뮬레이션을 위한 GNN 신경 시뮬레이터와 물리 제약을
-          내재한 신경망 구성방정식 모델을 개발.
+          Department of Mechanical Engineering · PI: Prof. Hayoung Chung.
+          InnoCORE — AI-Based Intelligent Design–Manufacturing Integration
+          Research Center. Develops GNN neural simulators for multi-physics
+          processes and neural-network constitutive models with embedded
+          physical invariants.
 
-      - company: 한국기계연구원 (KIMM)
-        position: 박사후연구원 (Postdoctoral Researcher)
+      - company: Korea Institute of Machinery and Materials (KIMM)
+        position: Postdoctoral Researcher
         location: Daejeon, South Korea
         url: https://www.kimm.re.kr
         start_date: 2021.03
         end_date: 2025.08
         summary: >
-          신뢰성연구센터 · PI: 김용진 센터장. 선박용 수소 저장용기 및 연료공급
-          시스템의 안전기준 개발 — 액체수소 서비스용 오스테나이트계 스테인리스강의
-          극저온(20 K) 인장·파괴인성 평가, 다축응력 상태 하의 연성 파괴 모델링,
-          IGF/IGC 코드 기반 수소 격납 시스템 소재 적합성 검토 수행.
+          Reliability Research Center · PI: Director Yongjin Kim. Development of
+          safety standards for marine hydrogen storage vessels and fuel-supply
+          systems — cryogenic (20 K) tensile and fracture-toughness
+          characterization of austenitic stainless steels, ductile-fracture
+          modeling under multi-axial stress states, and material-compatibility
+          review under the IGF/IGC code framework.
 
     Honors and Awards:
       - title: 우수논문발표상 (Best Paper Presentation Award)
