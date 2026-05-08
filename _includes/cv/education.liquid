@@ -1,35 +1,16 @@
 {% comment %}
-  Compact news-style education renderer.
-  Renders each entry as a single table row: date range on the left,
-  inline summary on the right. Mirrors _includes/news.liquid layout.
+  Compact KSRI-style renderer: date | degree, department, institution (advisor)
+  with an optional Thesis sub-line.
 {% endcomment %}
 
 <div class="news">
   <table class="table table-sm table-borderless">
     {% for entry in entries %}
-      {% capture sd %}{% if entry.start_date %}{{ entry.start_date }}{% elsif entry.startDate %}{{ entry.startDate }}{% endif %}{% endcapture %}
-      {% capture ed %}{% if entry.end_date %}{{ entry.end_date }}{% elsif entry.endDate %}{{ entry.endDate }}{% endif %}{% endcapture %}
-      {% assign sd_year = sd | strip | split: '-' | first %}
-      {% assign ed_year = ed | strip | split: '-' | first | default: 'Present' %}
-
-      {% capture study_type %}{% if entry.studyType %}{{ entry.studyType }}{% elsif entry.degree %}{{ entry.degree }}{% endif %}{% endcapture %}
-
       <tr>
-        <th scope="row" style="width: 20%; vertical-align: top; font-weight: 600;">
-          {% if sd_year != '' %}{{ sd_year }}{% if ed_year != '' %} – {{ ed_year }}{% endif %}{% endif %}
-        </th>
+        <th scope="row" style="width: 18%; vertical-align: top; font-weight: 600;">{{ entry.date }}</th>
         <td>
-          <strong>{{ study_type | strip }}</strong>{% if entry.url %}, <a href="{{ entry.url }}">{{ entry.institution }}</a>{% elsif entry.institution %}, {{ entry.institution }}{% endif %}{% if entry.area %} — <em>{{ entry.area }}</em>{% endif %}.
-          {% if entry.location %}
-            <span class="text-muted" style="font-size: 0.9em;">({{ entry.location }})</span>
-          {% endif %}
-          {% if entry.highlights %}
-            <ul style="margin: 0.25rem 0 0 0; padding-left: 1.25rem; font-size: 0.95em;">
-              {% for item in entry.highlights %}
-                <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-              {% endfor %}
-            </ul>
-          {% endif %}
+          <strong>{{ entry.studyType }}</strong>, {{ entry.area }}, {{ entry.institution }}{% if entry.advisor %} ({{ entry.advisor }}){% endif %}.
+          {% if entry.thesis %}<br><span style="opacity: 0.85;">Thesis: <em>{{ entry.thesis }}</em></span>{% endif %}
         </td>
       </tr>
     {% endfor %}
