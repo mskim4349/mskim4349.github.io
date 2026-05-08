@@ -272,7 +272,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Kim]
-  first_name: [Myungsung, M., M.S., MS]
+  first_name: [Myung-Sung, Myungsung, MyungSung, M.-S., M., M.S., MS]
 
   style: apa
   locale: en

@@ -1,21 +1,18 @@
 cv:
-  name: Myungsung Kim
-  label: Researcher · Computational Mechanics × Machine Learning
+  name: Myung-Sung Kim
+  label: Postdoctoral Researcher · Computational Solid Mechanics × Machine Learning
   email: ms.kim@unist.ac.kr
   location: Ulsan, Republic of Korea
   image: ""
   summary: >
-    Researcher at UNIST working on neural-network constitutive models, physics-informed
-    neural networks, and graph neural network surrogates for solid-mechanics simulation.
-
-  social_networks:
-    - network: GitHub
-      username: your-github-username
-    - network: LinkedIn
-      username: your-linkedin-username
+    Postdoctoral researcher at UNIST working at the boundary between
+    computational solid mechanics and machine learning. Research focuses on
+    neural-network constitutive modeling, indentation-based parameter
+    identification, damage and fracture in cryogenic environments, and
+    graph-neural-network surrogates for multi-physics simulation.
 
   address:
-    street: Department of Mechanical Engineering, 50 UNIST-gil
+    street: Department of Mechanical Engineering, 50 UNIST-gil, Eonyang-eup
     city: Ulju-gun, Ulsan
     region: ""
     postalCode: "44919"
@@ -23,69 +20,116 @@ cv:
 
   sections:
     Education:
-      - institution: UNIST (Ulsan National Institute of Science and Technology)
-        location: Ulsan, South Korea
-        url: https://www.unist.ac.kr
-        area: Mechanical Engineering — Computational Solid Mechanics
+      - institution: Pusan National University
+        location: Busan, South Korea
+        url: https://www.pusan.ac.kr
+        area: Naval Architecture and Ocean Engineering
         studyType: Ph.D.
-        start_date: YYYY
-        end_date: YYYY
+        start_date: 2016-03
+        end_date: 2021-02
         highlights:
-          - "Dissertation: TBD"
-          - Advisor — TBD
+          - "Dissertation: *A Study on Impact Failure of Materials and Structure Applied to LNG Cargo Containment System*"
+          - Advisor — Prof. Jae-Myung Lee
 
-      - institution: UNIST
-        location: Ulsan, South Korea
-        area: Mechanical Engineering
+      - institution: Pusan National University
+        location: Busan, South Korea
+        url: https://www.pusan.ac.kr
+        area: Naval Architecture and Ocean Engineering
+        studyType: M.S.
+        start_date: 2014-09
+        end_date: 2016-02
+        highlights:
+          - "Thesis: *Constitutive Model for Porous Composite Material and Application to FEA*"
+          - Advisor — Prof. Jae-Myung Lee
+
+      - institution: Pusan National University
+        location: Busan, South Korea
+        url: https://www.pusan.ac.kr
+        area: Naval Architecture and Ocean Engineering
         studyType: B.S.
-        start_date: YYYY
-        end_date: YYYY
+        start_date: 2012-03
+        end_date: 2014-08
 
     Experience:
-      - company: UNIST — Department of Mechanical Engineering
-        position: Researcher
+      - company: UNIST (Ulsan National Institute of Science and Technology)
+        position: Postdoctoral Researcher
         location: Ulsan, South Korea
-        start_date: YYYY
+        url: https://www.unist.ac.kr
+        start_date: 2025-09
         end_date: present
         summary: >
-          Develops machine-learning-augmented constitutive models and graph-neural-network
-          surrogates for multiscale solid mechanics; collaborates on national R&D projects
-          in advanced manufacturing and composites.
+          Department of Mechanical Engineering · PI: Prof. Hayoung Chung.
+          InnoCORE — AI-Based Intelligent Design–Manufacturing Integration
+          Research Center.
         highlights:
-          - Lead developer of a multiscale GNN surrogate for elasto-plastic homogenization
-          - Co-PI on the AI-modeling work package of the 2026 소재HUB consortium
-          - Mentoring graduate students on PINN and surrogate-modeling projects
+          - Develops graph-neural-network surrogates for accelerated transient multi-physics (welding, thermal-process) simulation
+          - Builds neural-network constitutive models with embedded physical invariants for plasticity and damage
+          - Indentation-based inverse identification of mechanical properties and residual stress
 
-    Awards and Grants:
-      - title: 2026 소재HUB 지정공모형-01 (Consortium Member, UNIST work package)
-        authors:
-          - Myungsung Kim (UNIST PI of composites/process AI modeling)
-        date: 2026
-        awarder: Ministry of Trade, Industry and Energy (placeholder)
+      - company: Korea Institute of Machinery and Materials (KIMM)
+        position: Postdoctoral Researcher
+        location: Daejeon, South Korea
+        url: https://www.kimm.re.kr
+        start_date: 2021-03
+        end_date: 2025-08
         summary: >
-          Consortium proposal on AI-driven modeling of fiber-reinforced composites and
-          processes for next-generation rehabilitation robotics.
+          Reliability Research Center, Virtual Engineering Platform Division ·
+          PI: Dr. Yongjin Kim. Development of safety standards for marine
+          hydrogen storage vessels and fuel supply systems.
+        highlights:
+          - Cryogenic (20 K) tensile and fracture-toughness characterization of austenitic stainless steels for liquid-hydrogen service
+          - Constitutive modeling and ductile-fracture simulation of stainless steel under multi-axial stress states
+          - Material-compatibility and safety review for IGF/IGC code-class hydrogen containment systems
 
-      - title: Best Paper Award (placeholder)
-        date: YYYY
-        awarder: Conference / Society name
-        summary: For work on TBD.
+    Honors and Awards:
+      - title: Best Paper Presentation Award
+        date: 2023-05
+        awarder: The Society of Naval Architects of Korea (SNAK), Spring Conference
+        summary: >
+          For research on the safety evaluation of liquid-hydrogen containment
+          systems based on metallic-material characterization.
+
+    Patents:
+      - bullet: "**14 Korean patents registered** (as inventor or co-inventor). Selected recent grants:"
+      - bullet: "*Impact-avoidance device based on machine learning* — KR 10-2938669, registered 2026-03-09."
+      - bullet: "*Impact-absorption device* — KR 10-2910239, registered 2026-01-06."
+      - bullet: "*Fluid-based fire-suppression spray system using liquid mixture* — KR 10-2909683, registered 2026-01-05."
+      - bullet: "*Inspection method and apparatus for liquid-hydrogen surface evaluation* — KR 10-2880364, registered 2025-10-29."
+      - bullet: "*Hydrogen-content distribution measurement method using ion beam and dynamic material modeling* — KR 10-2829482, registered 2025-06-30."
+      - bullet: "*Liquid-hydrogen storage strength testing apparatus* — KR 10-2812826, registered 2025-05-21."
+      - bullet: "*Pulsed-pressure-wave dynamic material testing apparatus* — KR 10-2611421, registered 2023-12-04."
+      - bullet: "*Dynamic-tensile cage-bridge testing apparatus* — KR 10-2547545, registered 2023-06-21."
+      - bullet: "*Repeated-impact testing apparatus and impact tester* — KR 10-2520565, registered 2023-04-06."
+      - bullet: "*Microscale tensile machine for liquid-hydrogen storage tank evaluation* — KR 10-2481612, registered 2022-12-22."
+      - bullet: "*Compact liquefied-fluid dynamic-test system* — KR 10-2464328, registered 2022-11-02."
+      - bullet: "*Pressure-wave analysis fire-test apparatus for thrusters* — KR 10-2056863, registered 2019-12-12."
+      - bullet: "*Cutting-test apparatus for thin metallic laminates* — KR 10-1866408, registered 2018-06-04."
+      - bullet: "*Dynamic-deformation pressure simulation apparatus for corrugated thin plates* — KR 10-1866399, registered 2018-06-11."
+
+    Software:
+      - bullet: "*Safety-evaluation program for cryogenic offshore plants* — Korea Copyright Commission C-2021-002102 (2021-01-13)."
+      - bullet: "*Reliability-evaluation program for cryogenic offshore plants* — Korea Copyright Commission C-2021-002103 (2021-01-13)."
 
     Skills:
-      - name: Computational Mechanics
+      - name: Computational Solid Mechanics
         level: Advanced
         icon: fa-solid fa-cube
-        keywords: "Finite-element analysis, plasticity, damage mechanics, multiscale modeling, FE², homogenization, residual stress"
+        keywords: "Finite-element analysis (Abaqus/Standard, Explicit, UMAT/VUMAT), elasto-plasticity, ductile damage and fracture, cryogenic constitutive modeling, residual-stress simulation, multiscale homogenization"
 
       - name: Machine Learning for Physics
         level: Advanced
         icon: fa-solid fa-brain
-        keywords: "PINN, graph neural networks, equivariant networks, surrogate modeling, Bayesian optimization, uncertainty quantification"
+        keywords: "Neural-network constitutive models, physics-informed neural networks (PINN), graph neural networks (GNN), data augmentation, surrogate modeling, inverse problems"
+
+      - name: Experimental Mechanics
+        level: Advanced
+        icon: fa-solid fa-flask
+        keywords: "Instrumented spherical indentation, tensile/fracture-toughness testing at cryogenic temperature (20 K), unloading-compliance and normalization J–R methods, electrochemical hydrogen charging"
 
       - name: Software & Tools
         level: Advanced
         icon: fa-solid fa-code
-        keywords: "Python, PyTorch, JAX, FEniCSx, Abaqus, ParaView, Git, Linux, HPC (SLURM)"
+        keywords: "Python, PyTorch, NumPy/SciPy, MATLAB, Abaqus, Fortran (UMAT/VUMAT), Git, Linux, HPC (SLURM), LaTeX"
 
     Languages:
       - name: Korean
@@ -96,4 +140,4 @@ cv:
     Interests:
       - name: Research
         icon: fa-solid fa-magnifying-glass-chart
-        keywords: "Constitutive modeling, neural-network surrogates, inverse problems, indentation testing, multiscale homogenization, additive manufacturing"
+        keywords: "Cryogenic environment metallic-material evaluation, constitutive modeling and damage mechanics, AI-augmented material design, indentation-based parameter identification, GNN surrogates for thermal/welding processes"

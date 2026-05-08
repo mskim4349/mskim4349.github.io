@@ -1,22 +1,26 @@
 ---
 layout: page
-title: PINN inverse identification
-description: Physics-informed neural networks for material parameter identification from instrumented indentation.
+title: NN-integrated elasto-plastic constitutive model
+description: A neural-network constitutive law parameterized in Haigh–Westergaard coordinates with physics-aware data augmentation.
 img: assets/img/7.jpg
 importance: 2
 category: research
 related_publications: false
 ---
 
-A physics-informed neural network framework that recovers elasto-plastic material
-parameters (yield stress, hardening modulus, Hollomon exponent) directly from a single
-instrumented load–depth curve, **without** needing the empirical Oliver–Pharr correction.
+A neural-network constitutive model for elasto-plasticity, parameterized in
+**Haigh–Westergaard stress coordinates** so the symmetry of the principal-stress
+space is exposed to the network rather than learned from data. A
+physics-consistent data-augmentation scheme exploits material-frame indifference
+and pressure-shear separability to reduce the data needed for stable, accurate
+hardening prediction.
 
-The PINN learns the displacement field under the indenter while satisfying the equilibrium
-equation in residual form; the unknown material parameters are treated as additional
-trainable variables. This sidesteps the ill-conditioning that plagues classical inverse
-FE approaches when only one observable (P–h curve) is available.
+**Why it matters.** Plain feed-forward NN constitutive laws train on raw stress
+tensors, so they have to *re*-learn invariance under rotation and basic
+thermodynamic constraints from examples. Building those into the parameterization
+shrinks the data budget and improves extrapolation to unseen stress paths.
 
-**Why it matters.** Indentation is one of the few mechanical tests that works on
-microscale samples (thin films, single grains, additively manufactured pillars). Reliable
-parameter identification from a single curve unlocks high-throughput characterization.
+**Reference.** *A Neural Network-Integrated Elastoplastic Constitutive Model
+Using Haigh–Westergaard Coordinates and Data Augmentation*, **Engineering
+Science and Technology, an International Journal**, 69, 102104, 2025 —
+[DOI](https://doi.org/10.1016/j.jestch.2025.102104).

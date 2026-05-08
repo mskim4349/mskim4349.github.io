@@ -1,113 +1,334 @@
 ---
 ---
 
-@string{cmame  = {Computer Methods in Applied Mechanics and Engineering}}
-@string{ijp    = {International Journal of Plasticity}}
-@string{jmps   = {Journal of the Mechanics and Physics of Solids}}
-@string{ijss   = {International Journal of Solids and Structures}}
-@string{cmat   = {Computational Materials Science}}
-@string{npjcm  = {npj Computational Materials}}
-
 % =============================================================================
-% Placeholder publications — replace with your real BibTeX entries.
-% Mark a paper with `selected={true}` to feature it on the homepage.
+% Peer-reviewed SCIE journal articles. Reverse-chronological. `selected={true}`
+% marks papers featured on the homepage.
 % =============================================================================
 
-@article{kim2025multiscale_gnn,
-  abbr        = {CMAME},
-  bibtex_show = {true},
-  selected    = {true},
-  title       = {A Multiscale Graph Neural Network Surrogate for History-Dependent
-                 Elasto-Plastic Homogenization},
-  author      = {Kim, Myungsung and Coauthor, A. and Coauthor, B.},
-  journal     = cmame,
-  year        = {2025},
-  volume      = {XXX},
-  pages       = {117xxx},
-  abstract    = {We propose a graph neural network surrogate for the offline–online
-                 multiscale modeling of elasto-plastic composites. The model encodes
-                 the microstructural mesh as a graph and predicts the homogenized stress
-                 response under arbitrary strain histories, achieving 100×–1000×
-                 speed-ups over direct FE² solves while preserving frame indifference
-                 and material objectivity.},
-  keywords    = {graph neural networks, multiscale modeling, plasticity, FE2}
+@article{kim2026jam_indentation_ann,
+  abbr     = {JAM},
+  selected = {true},
+  title    = {Determination of Material Parameters from Single Spherical
+              Indentation Data Using Artificial Neural Networks},
+  author   = {Kim, Myung-Sung and Lee, Taehyun and Kim, Yongjin},
+  journal  = {Journal of Applied Mechanics},
+  year     = {2026},
+  volume   = {93},
+  number   = {3},
+  pages    = {031008},
+  doi      = {10.1115/1.4070645}
 }
 
-@article{kim2024pinn_indentation,
-  abbr        = {IJP},
-  bibtex_show = {true},
-  selected    = {true},
-  title       = {Physics-Informed Neural Networks for Inverse Identification of
-                 Elasto-Plastic Parameters from Instrumented Indentation},
-  author      = {Kim, Myungsung and Coauthor, C.},
-  journal     = ijp,
-  year        = {2024},
-  volume      = {17X},
-  pages       = {103xxx},
-  abstract    = {A PINN-based inverse framework recovers yield stress, hardening
-                 modulus, and the Hollomon exponent from a single load–depth curve
-                 without requiring an analytical Oliver–Pharr correction.},
-  keywords    = {physics-informed neural networks, indentation, inverse problem,
-                 plasticity}
+@article{kim2025jestech_nn_constitutive,
+  abbr     = {JESTECH},
+  selected = {true},
+  title    = {A Neural Network-Integrated Elastoplastic Constitutive Model
+              Using {H}aigh--{W}estergaard Coordinates and Data Augmentation},
+  author   = {Kim, Myung-Sung and Lee, Taehyun and Kim, Yongjin},
+  journal  = {Engineering Science and Technology, an International Journal},
+  year     = {2025},
+  volume   = {69},
+  pages    = {102104},
+  doi      = {10.1016/j.jestch.2025.102104}
 }
 
-@article{kim2024nn_constitutive,
-  abbr        = {JMPS},
-  bibtex_show = {true},
-  selected    = {true},
-  title       = {Thermodynamically Consistent Neural-Network Constitutive Models
-                 for Anisotropic Plasticity},
-  author      = {Kim, Myungsung and Coauthor, D. and Coauthor, E.},
-  journal     = jmps,
-  year        = {2024},
-  volume      = {18X},
-  pages       = {105xxx},
-  abstract    = {We embed a free-energy and dissipation potential parameterization
-                 inside a feed-forward network so that the resulting model satisfies
-                 the Clausius–Duhem inequality by construction, while remaining
-                 expressive enough to capture anisotropic hardening observed in
-                 rolled aluminum sheets.},
-  keywords    = {constitutive modeling, anisotropy, neural networks, thermodynamics}
+@article{kim2025ijss_damage,
+  abbr     = {IJSS},
+  selected = {true},
+  title    = {Numerical Modeling of Stress-State Dependent Damage Evolution and
+              Ductile Fracture of Austenitic Stainless Steel},
+  author   = {Kim, Myung-Sung and Cho, You-Hee and Jang, Hwasup},
+  journal  = ijss,
+  year     = {2025},
+  volume   = {318},
+  pages    = {113439},
+  doi      = {10.1016/j.ijsolstr.2025.113439}
 }
 
-@article{kim2023damage_surrogate,
-  abbr        = {CompMatSci},
-  bibtex_show = {true},
-  title       = {A Convolutional Surrogate for Phase-Field Damage Evolution in
-                 Heterogeneous Microstructures},
-  author      = {Kim, Myungsung and Coauthor, F.},
-  journal     = cmat,
+@article{kim2024tafm_unloading,
+  abbr     = {TAFM},
+  selected = {true},
+  title    = {Comparative Analysis of Unloading Compliance and Normalization
+              Methods for Fracture Toughness Assessment in 316{L} Stainless
+              Steel at Cryogenic Temperatures},
+  author   = {Kim, Myung-Sung and Lee, Taehyun and Kim, Yongjin},
+  journal  = {Theoretical and Applied Fracture Mechanics},
+  year     = {2024},
+  volume   = {132},
+  pages    = {104474},
+  doi      = {10.1016/j.tafmec.2024.104474}
+}
+
+@article{kim2023metals_304l,
+  abbr     = {Metals},
+  title    = {Tensile and Fracture Characteristics of 304{L} Stainless Steel
+              at Cryogenic Temperatures for Liquid Hydrogen Service},
+  author   = {Kim, Myung-Sung and Lee, Taehyun and Park, Jong-Won and Kim, Yongjin},
+  journal  = {Metals},
+  year     = {2023},
+  volume   = {13},
+  number   = {10},
+  pages    = {1774},
+  doi      = {10.3390/met13101774}
+}
+
+@article{kim2023jmse_lh2_review,
+  abbr     = {JMSE},
+  title    = {A Comprehensive Review on Material Compatibility and Safety
+              Standards for Liquid Hydrogen Cargo and Fuel Containment Systems
+              in Marine Applications},
+  author   = {Kim, Myung-Sung and Chun, Kang Woo},
+  journal  = {Journal of Marine Science and Engineering},
+  year     = {2023},
+  volume   = {11},
+  number   = {10},
+  pages    = {1927},
+  doi      = {10.3390/jmse11101927}
+}
+
+@article{shin2023aipadv_friction,
+  abbr    = {AIP Adv.},
+  title   = {Investigation of Friction Coefficient to Improve Traction
+             Condition in {R2R} Transport System},
+  author  = {Shin, Woojoo and Kim, Myung-Sung and Lee, Taehyun and
+             Kang, Dongwoo and Shim, JaeWon and Kim, Yongjin},
+  journal = {AIP Advances},
+  year    = {2023},
+  volume  = {13},
+  number  = {1},
+  pages   = {015210},
+  doi     = {10.1063/5.0131670}
+}
+
+@article{lee2023appsci_oilpump,
+  abbr    = {Appl. Sci.},
+  title   = {Investigation of Failure Causes of Oil Pump Based on Operating
+             Conditions},
+  author  = {Lee, Jong-Jik and Kim, Yongjin and Lee, Taehyun and
+             Kim, Myung-Sung and Kim, Jeong-Hyeon and Tak, Hyun-Jin and
+             Park, Jong-Won and Oh, Dongho},
+  journal = {Applied Sciences},
+  year    = {2023},
+  volume  = {13},
+  number  = {7},
+  pages   = {4308},
+  doi     = {10.3390/app13074308}
+}
+
+@article{kim2022appsci_polymer,
+  abbr    = {Appl. Sci.},
+  title   = {Mechanical Performance of Polymer Materials for Low-Temperature
+             Applications},
+  author  = {Kim, Yongjin and Kim, Myung-Sung and Jeon, Hyeon-Jong and
+             Kim, Jeong-Hyeon and Chun, Kang Woo},
+  journal = {Applied Sciences},
+  year    = {2022},
+  volume  = {12},
+  number  = {23},
+  pages   = {12251},
+  doi     = {10.3390/app122312251},
+  note    = {Corresponding author: M.-S. Kim}
+}
+
+@article{kim2022processes_lh2_tank,
+  abbr    = {Processes},
+  title   = {Metallic Material Evaluation of Liquid Hydrogen Storage Tank for
+             Marine Application Using a Tensile Cryostat for 20 {K} and
+             Electrochemical Cell},
+  author  = {Kim, Myung-Sung and Lee, Taehyun and Son, Yeonhong and
+             Park, Junesung and Kim, Minsung and Eun, Hyeonjun and
+             Park, Jong-Won and Kim, Yongjin},
+  journal = {Processes},
+  year    = {2022},
+  volume  = {10},
+  number  = {11},
+  pages   = {2401},
+  doi     = {10.3390/pr10112401}
+}
+
+@article{song2022net_fluoroelastomer,
+  abbr    = {NET},
+  title   = {Effects of Heat and Gamma Radiation on the Degradation Behaviour
+             of Fluoroelastomer in a Simulated Severe Accident Environment},
+  author  = {Song, Inyoung and Lee, Taehyun and Ryu, Kyungha and
+             Kim, Yongjin and Kim, Myung-Sung and Park, Jong-Won and
+             Kim, Ji Hyun},
+  journal = {Nuclear Engineering and Technology},
+  year    = {2022},
+  volume  = {54},
+  number  = {12},
+  pages   = {4514--4521},
+  doi     = {10.1016/j.net.2022.08.006}
+}
+
+@article{kim2022metals_ductile_failure,
+  abbr    = {Metals},
+  title   = {A New Computational Method for Predicting Ductile Failure of
+             304{L} Stainless Steel},
+  author  = {Kim, Myung-Sung and Kim, Hee-Tae and Choi, Young-Hwan and
+             Kim, Jeong-Hyeon and Kim, Seul-Kee and Lee, Jae-Myung},
+  journal = {Metals},
+  year    = {2022},
+  volume  = {12},
+  number  = {8},
+  pages   = {1309},
+  doi     = {10.3390/met12081309}
+}
+
+@article{kim2021ijms_gfrp,
+  abbr     = {IJMS},
+  selected = {true},
+  title    = {Mechanical Performance Degradation of Glass Fiber-Reinforced
+              Polyurethane Foam Subjected to Repetitive Low-Energy Impact},
+  author   = {Kim, Myung-Sung and Kim, Jeong-Dae and Kim, Jeong-Hyeon and
+              Lee, Jae-Myung},
+  journal  = {International Journal of Mechanical Sciences},
+  year     = {2021},
+  volume   = {194},
+  pages    = {106188},
+  doi      = {10.1016/j.ijmecsci.2020.106188}
+}
+
+@article{kim2021appsci_curved_plate,
+  abbr    = {Appl. Sci.},
+  title   = {Experimental Study and Development of Design Formula for
+             Estimating the Ultimate Strength of Curved Plates},
+  author  = {Kim, Jeong-Hyeon and Park, Doo-Hwan and Kim, Seul-Kee and
+             Kim, Myung-Sung and Lee, Jae-Myung},
+  journal = {Applied Sciences},
+  year    = {2021},
+  volume  = {11},
+  number  = {5},
+  pages   = {2379},
+  doi     = {10.3390/app11052379}
+}
+
+@article{kim2019appsci_corrugated,
+  abbr    = {Appl. Sci.},
+  title   = {Experimental Investigation of Structural Response of Corrugated
+             Steel Sheet Subjected to Repeated Impact Loading: Performance of
+             {LNG} Cargo Containment System},
+  author  = {Kim, Myung-Sung and Kim, Jeong-Hyeon and Kim, Seul-Kee and
+             Lee, Jae-Myung},
+  journal = {Applied Sciences},
+  year    = {2019},
+  volume  = {9},
+  number  = {8},
+  pages   = {1558},
+  doi     = {10.3390/app9081558}
+}
+
+@article{kim2019jcsr_lng_failure,
+  abbr    = {JCSR},
+  title   = {Impact Failure Analysis of Corrugated Steel Plate in {LNG}
+             Containment Cargo System},
+  author  = {Kim, Myung-Sung and Kwon, Sun-Beom and Kim, Seul-Kee and
+             Kim, Jeong-Hyeon and Lee, Jae-Myung},
+  journal = {Journal of Constructional Steel Research},
+  year    = {2019},
+  volume  = {156},
+  pages   = {287--301},
+  doi     = {10.1016/j.jcsr.2019.02.008}
+}
+
+@article{nguyen2019metals_charpy,
+  abbr    = {Metals},
+  title   = {Charpy Impact Properties of Hydrogen-Exposed 316{L} Stainless
+             Steel at Ambient and Cryogenic Temperatures},
+  author  = {Nguyen, Le Thanh Hung and Hwang, Jae-Sik and Kim, Myung-Sung and
+             Kim, Jeong-Hyeon and Kim, Seul-Kee and Lee, Jae-Myung},
+  journal = {Metals},
+  year    = {2019},
+  volume  = {9},
+  number  = {6},
+  pages   = {625},
+  doi     = {10.3390/met9060625}
+}
+
+@article{park2019jpe_polymer,
+  abbr    = {JPE},
+  title   = {Analysis of Mechanical Properties of Polymer Materials Considering
+             Lateral Confinement Effects},
+  author  = {Park, Ki-Beom and Kim, Myung-Sung and Kim, Jeong-Hyeon and
+             Kim, Seul-Kee and Lee, Jae-Myung},
+  journal = {Journal of Polymer Engineering},
+  year    = {2019},
+  volume  = {39},
+  number  = {5},
+  pages   = {432--441},
+  doi     = {10.1515/polyeng-2018-0299}
+}
+
+@article{lee2015matdes_pufoam,
+  abbr     = {Mater. Des.},
+  selected = {true},
+  title    = {A Temperature- and Strain-Rate-Dependent Isotropic
+              Elasto-Viscoplastic Model for Glass-Fiber-Reinforced Polyurethane
+              Foam},
+  author   = {Lee, Chi-Seung and Kim, Myung-Sung and Park, Seong-Bo and
+              Kim, Jeong-Hyeon and Bang, Chang-Seon and Lee, Jae-Myung},
+  journal  = {Materials and Design},
+  year     = {2015},
+  volume   = {84},
+  pages    = {419--429},
+  doi      = {10.1016/j.matdes.2015.06.086}
+}
+
+% =============================================================================
+% Technical Reports — Korean Register (KRS), in collaboration with KIMM and
+% Pusan National University.
+% =============================================================================
+
+@techreport{krs2021_lh2_metal,
+  abbr        = {KRS},
+  title       = {Material Selection Guide for Metallic Containment Systems of
+                 Alternative Marine Fuels (Korean: 선박용 대체연료 격납설비의
+                 금속소재 선정 가이드)},
+  author      = {Kim, Myung-Sung and {Korean Register} and {Korea Institute of Machinery and Materials} and {Pusan National University}},
+  institution = {Korean Register (KRS)},
+  type        = {Technical Report},
+  number      = {2021-ETC-03},
+  year        = {2021},
+  month       = {oct},
+  html        = {https://www.krs.co.kr/kor/Exclusive/Tech_ETC_View.aspx?MRID=283&NO=3456}
+}
+
+@techreport{krs2023_lh2_storage,
+  abbr        = {KRS},
+  title       = {Research on Compatible Materials for Marine Liquid Hydrogen
+                 Storage Systems (Korean: 선박용 액체수소 저장시스템 적합 소재
+                 연구)},
+  author      = {Kim, Myung-Sung and {Korean Register} and {Korea Institute of Machinery and Materials} and {Pusan National University}},
+  institution = {Korean Register (KRS)},
+  type        = {Technical Report},
+  number      = {2023-ETC-01(K)},
   year        = {2023},
-  volume      = {22X},
-  pages       = {112xxx},
-  abstract    = {A U-Net surrogate predicts the next-step phase-field variable from
-                 the current strain energy density field, enabling rapid screening
-                 of microstructural designs for damage tolerance.}
+  month       = {aug},
+  html        = {https://www.krs.co.kr/kor/BBS/BF_View.aspx?MRID=296&BF_ROWID=PSXjM1z9iD6GUyA9i7oOvw==}
 }
 
-@article{kim2023welding_ml,
-  abbr        = {IJSS},
-  bibtex_show = {true},
-  title       = {Data-Driven Reduced-Order Modeling of Residual Stress in
-                 Multi-Pass Welding},
-  author      = {Kim, Myungsung and Coauthor, G.},
-  journal     = ijss,
-  year        = {2023},
-  volume      = {26X},
-  pages       = {112xxx},
-  abstract    = {We combine proper orthogonal decomposition with a recurrent neural
-                 network to reproduce full residual stress fields from multi-pass
-                 welding simulations at a fraction of the computational cost.}
+@techreport{krs2024_cryo_insulation,
+  abbr        = {KRS},
+  title       = {Selection Guide for Thermal Properties of Cryogenic Insulation
+                 Materials (Korean: 극저온 단열소재 열적 물성 선정 가이드
+                 연구보고서)},
+  author      = {Kim, Myung-Sung and {Korean Register} and {Korea Institute of Machinery and Materials} and {Pusan National University}},
+  institution = {Korean Register (KRS)},
+  type        = {Technical Report},
+  year        = {2024},
+  month       = {may},
+  html        = {https://www.krs.co.kr/kor/Webzine/View.aspx?WMDR=369&WCDR=6497}
 }
 
-@inproceedings{kim2022gnn_workshop,
-  abbr        = {NeurIPS-W},
-  bibtex_show = {true},
-  title       = {Mesh-Based Simulation of Solids with Equivariant Graph Networks},
-  author      = {Kim, Myungsung and Coauthor, H.},
-  booktitle   = {NeurIPS Workshop on Machine Learning and the Physical Sciences},
-  year        = {2022},
-  abstract    = {Preliminary results showing that E(3)-equivariant message passing
-                 yields stable long-horizon rollouts on quasi-static elasticity
-                 benchmarks where standard MeshGraphNets diverge.}
+@techreport{krs2026_h2_safety,
+  abbr        = {KRS},
+  title       = {Safety Review of Hydrogen Fuel-Propelled Vessels (Korean:
+                 수소연료 추진선박의 안전성 검토)},
+  author      = {Kim, Myung-Sung and {Korean Register} and {Korea Institute of Machinery and Materials} and {Pusan National University}},
+  institution = {Korean Register (KRS)},
+  type        = {Technical Report},
+  year        = {2026},
+  month       = {mar},
+  html        = {https://homedev.krs.co.kr/kor/tech_infor/read.aspx?s_code=0403070000&tec_code=ALL&no=3677&gubun=INTRA}
 }

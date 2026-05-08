@@ -1,9 +1,10 @@
 ---
 layout: post
-date: 2025-07-15 10:00:00+0900
+date: 2025-09-01 09:00:00+0900
 inline: true
 related_posts: false
 ---
 
-Talk at **WCCM-PANACM 2025** in Vancouver: *"Frame-indifferent neural surrogates for
-history-dependent multiscale problems"* — slides available on request.
+Joined the **Department of Mechanical Engineering, UNIST** as a postdoctoral
+researcher with the **InnoCORE — AI-Based Intelligent Design–Manufacturing
+Integration Research Center** (PI: Prof. Hayoung Chung).
