@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Selected research projects and open-source tools.",
+          description: "Funded research projects and consortium roles.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -383,22 +383,7 @@ ninja.data = [{
           section: "News",},{id: "news-joined-the-2026-소재hub-consortium-unist-partners-on-ai-driven-modeling-of-composite-materials-and-processes-for-next-generation-rehabilitation-robotics-proposal-due-2026-05-11",
           title: 'Joined the 2026 소재HUB consortium (UNIST + partners) on AI-driven modeling of composite...',
           description: "",
-          section: "News",},{id: "projects-ann-parameter-id-from-indentation",
-          title: 'ANN parameter ID from indentation',
-          description: "Recovering elasto-plastic material parameters from a single spherical-indentation curve with artificial neural networks.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-nn-integrated-elasto-plastic-constitutive-model",
-          title: 'NN-integrated elasto-plastic constitutive model',
-          description: "A neural-network constitutive law parameterized in Haigh–Westergaard coordinates with physics-aware data augmentation.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-composite-materials-ai-modeling",
-          title: 'Composite materials AI modeling',
-          description: "Data-driven process–structure–property modeling for rehabilitation-robotics composites (소재HUB consortium, 2026–).",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "teachings-data-science-fundamentals",
+          section: "News",},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
           section: "Teachings",handler: () => {
