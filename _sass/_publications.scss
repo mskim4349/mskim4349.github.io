@@ -208,12 +208,9 @@ h2.pub-section {
   margin-bottom: 1.2rem;
 }
 
-.publications.publications-selected {
-  margin-top: 0.5rem;
-
+.publications.publications-unnumbered {
   ol.bibliography li {
-    padding-left: 1.1rem;
-    border-left: 3px solid var(--global-theme-color);
+    padding-left: 0;
 
     &::before {
       content: none;

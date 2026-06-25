@@ -2,23 +2,28 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Peer-reviewed journal articles, newest first. My name is shown in bold.
+description: 
 nav: true
 nav_order: 2
 ---
 
-{% include bib_search.liquid %}
+<h2 class="pub-section">Journal Articles (SCIE)</h2>
+<div class="publications">
 
-<h2 class="pub-section">Selected Publications</h2>
-<div class="publications publications-selected">
-
-{% bibliography --query @*[selected=true] %}
+{% bibliography --query @*[korean=false] %}
 
 </div>
 
-<h2 class="pub-section">All Publications</h2>
+<h2 class="pub-section">Korean Journal Articles</h2>
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --query @*[korean=true] %}
+
+</div>
+
+<h2 class="pub-section">Under Review &amp; In Preparation</h2>
+<div class="publications publications-unnumbered">
+
+{% bibliography --query @*[preprint=true] %}
 
 </div>
