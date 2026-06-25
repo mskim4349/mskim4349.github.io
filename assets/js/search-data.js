@@ -10,21 +10,21 @@ ninja.data = [{
       window.location.href = "/";
     },
   },{id: "nav-research",
-          title: "research",
+          title: "Research",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-publications",
-          title: "publications",
+          title: "Publications",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-projects",
-          title: "projects",
+          title: "Projects",
           description: "Funded research projects.",
           section: "Navigation",
           handler: () => {
