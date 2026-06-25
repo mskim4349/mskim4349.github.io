@@ -1,8 +1,7 @@
 ---
 layout: cv
-permalink: /cv/
+permalink: /
 title: CV
-nav: true
-nav_order: 5
+nav: false
 cv_format: rendercv # options: rendercv, jsonresume
 ---
