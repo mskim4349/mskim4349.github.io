@@ -44,4 +44,5 @@ nav: false
     <li>On a domain ten times larger than training, predicts about 11,000 time steps under 1 percent error, around 200 times faster than finite elements.</li>
   </ul>
   <div class="rf-fig2"><img src="/assets/img/research/detail/gnn_framework.svg" alt="Label-free graph-neural-network surrogate framework"></div>
+  <div class="rf-fig2"><img src="/assets/img/research/detail/gnn_heat.svg" alt="Moving heat source on a domain ten times larger than training"></div>
 </div>

@@ -28,6 +28,7 @@ nav: false
     <li>Ductile damage evolution from elastic-modulus degradation, implemented as a finite-element subroutine that predicts necking and crack initiation in 304L.</li>
   </ul>
   <div class="rf-fig2"><img src="/assets/img/research/detail/fracture_locus.svg" alt="Three-dimensional fracture locus"></div>
+  <div class="rf-fig2"><img src="/assets/img/research/detail/damage_model.svg" alt="Ductile damage evolution from unloading-reloading tests"></div>
 </div>
 
 <div class="rf-sub">
