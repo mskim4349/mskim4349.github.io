@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /projects/
-title: projects
+title: Projects
 description: Funded research projects.
 nav: true
 nav_order: 3
