@@ -35,9 +35,24 @@
     list-style: none;
     padding: 0;
     margin-top: 0;
+    counter-reset: bibcounter;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.4rem;
+      counter-increment: bibcounter;
+      position: relative;
+      padding-left: 2.6rem;
+
+      &::before {
+        content: counter(bibcounter) ".";
+        position: absolute;
+        left: 0;
+        top: 0;
+        min-width: 2rem;
+        text-align: right;
+        font-weight: 600;
+        color: var(--global-theme-color);
+      }
 
       .preview {
         display: inline-block;
@@ -82,8 +97,9 @@
         }
 
         > em {
-          border-bottom: 1px solid;
           font-style: normal;
+          font-weight: 700;
+          color: var(--global-text-color);
         }
 
         > span.more-authors {
@@ -178,6 +194,29 @@
     }
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
+    }
+  }
+}
+
+h2.pub-section {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+  border-bottom: 2px solid var(--global-divider-color);
+  padding-bottom: 0.3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.publications.publications-selected {
+  margin-top: 0.5rem;
+
+  ol.bibliography li {
+    padding-left: 1.1rem;
+    border-left: 3px solid var(--global-theme-color);
+
+    &::before {
+      content: none;
     }
   }
 }
