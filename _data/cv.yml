@@ -57,7 +57,6 @@ cv:
     Registered Patents:
       - table:
           number_label: Patent No.
-          people_label: Inventors
       - date: "2026.03.09"
         title: 계류삭의 장력을 이용한 에너지 회수장치
         number: KR 10-2938669
@@ -118,7 +117,6 @@ cv:
     Software:
       - table:
           number_label: Registration No.
-          people_label: Authors
       - lead: 한국저작권위원회 프로그램 등록.
       - date: "2021.01.13"
         title: 극한환경 해양플랜트 구조평가용 프로그램
