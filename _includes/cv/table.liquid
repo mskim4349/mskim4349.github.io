@@ -6,13 +6,14 @@
 
     Registered Patents:
       - table:
-          number_label: Patent No.   # omit a *_label to fall back to the default
-          people_label: Inventors    # omit entirely to drop the column
+          number_label: Patent No.   # every *_label is optional; omitting one
+          people_label: Inventors    # drops that column entirely
       - lead: optional paragraph rendered above the table
       - date: "2026.03.09"
         title: ...
         number: KR 10-2938669
         people: 김용진, **김명성**, ...
+        note: optional free text for a `note_label` column
         url: optional; turns the title into a link
 
   Sections without a `table` entry keep the theme's default bullet rendering.
@@ -21,8 +22,9 @@
 {% assign meta = include.meta %}
 {% assign date_label = meta.date_label | default: 'Date' %}
 {% assign title_label = meta.title_label | default: 'Title' %}
-{% assign number_label = meta.number_label | default: 'No.' %}
+{% assign number_label = meta.number_label %}
 {% assign people_label = meta.people_label %}
+{% assign note_label = meta.note_label %}
 
 {% for entry in entries %}
   {% if entry.lead %}
@@ -35,9 +37,14 @@
     <tr>
       <th scope="col" class="cv-table-date">{{ date_label }}</th>
       <th scope="col">{{ title_label }}</th>
-      <th scope="col">{{ number_label }}</th>
+      {% if number_label %}
+        <th scope="col" class="cv-table-number">{{ number_label }}</th>
+      {% endif %}
       {% if people_label %}
         <th scope="col">{{ people_label }}</th>
+      {% endif %}
+      {% if note_label %}
+        <th scope="col">{{ note_label }}</th>
       {% endif %}
     </tr>
   </thead>
@@ -55,9 +62,14 @@
             {{ entry.title }}
           {% endif %}
         </td>
-        <td>{{ entry.number }}</td>
+        {% if number_label %}
+          <td class="cv-table-number">{{ entry.number }}</td>
+        {% endif %}
         {% if people_label %}
           <td class="cv-table-people">{{ entry.people | markdownify | remove: '<p>' | remove: '</p>' }}</td>
+        {% endif %}
+        {% if note_label %}
+          <td class="cv-table-note">{{ entry.note }}</td>
         {% endif %}
       </tr>
     {% endfor %}
