@@ -180,6 +180,20 @@ layout: default
                 {% include cv/references.liquid %}
               {% else %}
                 <!-- Generic section -->
+                {% comment %}
+                  A section opts into table rendering by carrying a `table` meta
+                  entry in _data/cv.yml; otherwise it falls back to bullets.
+                {% endcomment %}
+                {% assign table_meta = false %}
+                {% for entry in section_entries %}
+                  {% if entry.table %}
+                    {% assign table_meta = entry.table %}
+                  {% endif %}
+                {% endfor %}
+                {% if table_meta %}
+                  {% assign entries = section_entries %}
+                  {% include cv/table.liquid meta=table_meta %}
+                {% else %}
                 {% for entry in section_entries %}
                   {% if entry.bullet %}
                     <ul class="card-text font-weight-light list-group list-group-flush">
@@ -191,6 +205,7 @@ layout: default
                     </div>
                   {% endif %}
                 {% endfor %}
+                {% endif %}
               {% endif %}
             </div>
           </div>

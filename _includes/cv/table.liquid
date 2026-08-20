@@ -1,0 +1,65 @@
+{% comment %}
+  Generic table renderer for CV sections.
+
+  Opt in from _data/cv.yml by making the first entry of a section a `table` meta
+  entry; every other entry becomes a row:
+
+    Registered Patents:
+      - table:
+          number_label: Patent No.   # omit a *_label to fall back to the default
+          people_label: Inventors    # omit entirely to drop the column
+      - lead: optional paragraph rendered above the table
+      - date: "2026.03.09"
+        title: ...
+        number: KR 10-2938669
+        people: 김용진, **김명성**, ...
+        url: optional; turns the title into a link
+
+  Sections without a `table` entry keep the theme's default bullet rendering.
+{% endcomment %}
+
+{% assign meta = include.meta %}
+{% assign date_label = meta.date_label | default: 'Date' %}
+{% assign title_label = meta.title_label | default: 'Title' %}
+{% assign number_label = meta.number_label | default: 'No.' %}
+{% assign people_label = meta.people_label %}
+
+{% for entry in entries %}
+  {% if entry.lead %}
+    <p class="cv-table-lead font-weight-light">{{ entry.lead | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+  {% endif %}
+{% endfor %}
+
+<table class="table table-sm cv-table">
+  <thead>
+    <tr>
+      <th scope="col" class="cv-table-date">{{ date_label }}</th>
+      <th scope="col">{{ title_label }}</th>
+      <th scope="col">{{ number_label }}</th>
+      {% if people_label %}
+        <th scope="col">{{ people_label }}</th>
+      {% endif %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for entry in entries %}
+      {% if entry.table or entry.lead %}
+        {% continue %}
+      {% endif %}
+      <tr>
+        <td class="cv-table-date">{{ entry.date }}</td>
+        <td>
+          {% if entry.url %}
+            <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">{{ entry.title }}</a>
+          {% else %}
+            {{ entry.title }}
+          {% endif %}
+        </td>
+        <td>{{ entry.number }}</td>
+        {% if people_label %}
+          <td class="cv-table-people">{{ entry.people | markdownify | remove: '<p>' | remove: '</p>' }}</td>
+        {% endif %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

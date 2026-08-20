@@ -218,3 +218,49 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+/*****************************
+ * CV sections rendered as tables
+ *****************************/
+
+.cv p.cv-table-lead {
+  color: var(--global-text-color-light);
+  margin-bottom: 0.5rem;
+}
+
+.cv table.cv-table {
+  background-color: transparent;
+  /* Bootstrap hard-codes `.table { color: #212529 }`, which is unreadable on
+     the dark theme background. */
+  color: var(--global-text-color);
+
+  th,
+  td {
+    padding: 0.35rem 1rem 0.35rem 0;
+    vertical-align: top;
+    border-color: var(--global-divider-color);
+  }
+
+  thead th {
+    border-bottom: 1px solid var(--global-divider-color);
+    white-space: nowrap;
+  }
+
+  .cv-table-date {
+    white-space: nowrap;
+  }
+
+  td.cv-table-people {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+  }
+}
+
+/* Bootstrap hard-codes `.list-group-item { background-color: #fff }`, which
+   turns any bullet-rendered CV section into white blocks on the dark theme.
+   Kept as a safety net for sections that do not opt into table rendering. */
+.cv .list-group-item {
+  background-color: transparent;
+  border-color: var(--global-divider-color);
+  color: var(--global-text-color);
+}
