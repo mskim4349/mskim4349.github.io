@@ -27,7 +27,7 @@ nav_order: 3
       <td style="vertical-align: top;">2026.05 – 2026.06</td>
       <td style="vertical-align: top;">금속소재 내 수소 확산 및 잔류 거동 수치해석 모델링</td>
       <td style="vertical-align: top;">부산대학교 산학협력단<br>학술연구용역</td>
-      <td style="vertical-align: top;">과제책임자</td>
+      <td style="vertical-align: top;">연구책임자</td>
     </tr>
   </tbody>
 </table>
